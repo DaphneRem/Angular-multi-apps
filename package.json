@@ -8,7 +8,11 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "lib": "ng serve --app lib --port 4500",
+    "app0": "ng serve --app app0",
+    "app1": "ng serve --app app1 --port 4000",
+    "all": "ng serve --app app0 | ng serve --app app1 --port 4000 | ng serve --app lib --port 4500"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +25,10 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.7.2",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
